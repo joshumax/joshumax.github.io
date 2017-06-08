@@ -4,8 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is a simple Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/).  Plus, you can find a lot of themes at [jekyllthemes.org](http://jekyllthemes.org/)
+Hi! I'm Josh. I'm a student by day and a tinkerer by night. I usually do very bizarre things that land me on the front of Reddit a lot.
+If you're reading this you probably don't know me so I'll give you a quick run down of what this blog is about:
 
-You can find the source code for this theme at: <data data-icon="ei-sc-github"></data>  [jekyll-simple](https://github.com/wild-flame/jekyll-simple)
+* Reverse engineering
+* Malware hunting
+* Machine Learning
+* Embedded Device Exploitation
+* Zany Hacks
 
-You can find the source code for Jekyll at <data data-icon="ei-sc-github"></data>  [jekyll](https://github.com/jekyll/jekyll)
+You can always reach me as joshumax on freenode, or just hit-me-up on my email joshumax [**AT**] uw [**DOT**] edu.
