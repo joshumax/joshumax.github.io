@@ -10,7 +10,7 @@ known as `binwalk`. Nothing too unusual and everything seemed to work quite smoo
 
 ![Imgur](http://i.imgur.com/gyjiEwD.png)
 
-Then I went to `cd` into the newly-extracted firmware directory, and that's where is all went wrong...
+Then I went to `cd` into the newly-extracted firmware directory, and that's where it all went wrong...
 
 <!--description-->
 
@@ -35,14 +35,14 @@ _happened_ to have a rogue `libpthread.so.0` sitting in the top directory:
 ![Imgur](http://i.imgur.com/TvVXpAZ.png)
 
 Moving back up a directory, of course, fixed the problem. Now the question that was on my
-mind was _"WHY ON EARTH IS MY WORKSTATION TRYING TO LOAD LIBRARIES FROM '.'?"_
+mind was _"WHY ON EARTH IS MY WORKSTATION TRYING TO LOAD LIBRARIES FROM $PWD?"_
 
 A quick inspection of my LD_LIBRARY_PATH gave me:
 ```
 /home/joshua/torch/install/lib:/home/joshua/torch/install/lib:/home/joshua/torch/install/lib:
 ```
 Which _seemed_ okay. Torch created that when it wrote to my .bashrc and nothing seemed
-particularly out of the ordenary. But nonetheless, unexporting it "miraculously" fixed
+particularly out of the ordinary. But nonetheless, unexporting it "miraculously" fixed
 my problem and I was able to browse the directory of the router's extracted firmware.
 
 After a bit of research and playing around, I came across a startling fact:
