@@ -6,7 +6,7 @@ description: If used incorrectly, LD_LIBRARY_PATH can cause a plethora of issues
 ---
 
 So, today I decided to check out the firmware of a wireless router using the amazing utility
-known as `binwalk`. Nothing too unusual and everything seemed to work quite smoothly:
+known as [`binwalk`](https://github.com/devttys0/binwalk). Nothing too unusual and everything seemed to work quite smoothly:
 
 ![Imgur](http://i.imgur.com/gyjiEwD.png)
 
@@ -41,7 +41,7 @@ A quick inspection of my LD_LIBRARY_PATH gave me:
 ```
 /home/joshua/torch/install/lib:/home/joshua/torch/install/lib:/home/joshua/torch/install/lib:
 ```
-Which _seemed_ okay. Torch created that when it wrote to my .bashrc and nothing seemed
+Which _seemed_ okay. [Torch](http://torch.ch/) created that when it wrote to my .bashrc and nothing seemed
 particularly out of the ordinary. But nonetheless, unexporting it "miraculously" fixed
 my problem and I was able to browse the directory of the router's extracted firmware.
 
