@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Wine 3.0 on Android
+title: Building Wine 3.0 for Android
 category: general
 description: A guide on how to get Wine working on your Android device
 ---
