@@ -17,7 +17,7 @@ as well as Wine on Android development for potential contributors.
 ***Disclaimer: Wine on Android is still very much under development and may not work for all devices, architectures,
 and graphics drivers. Additionally, Wine Qemu integration for Android is not yet fully complete, meaning you will
 currently ONLY be able to run Win32 applications on x86 devices and WinRT applications on ARM devices.
-See https://forum.xda-developers.com/showthread.php?t=2092348 for a list of programs ported to WinRT.***
+See <https://forum.xda-developers.com/showthread.php?t=2092348> for a list of programs ported to WinRT.***
 
 <!--description-->
 
@@ -37,12 +37,12 @@ In order to build Wine for Android, you're going to need a few prerequisites:
     ```
 
  - Next, you're going to need the `Android SDK`. Installation instructions depend on your platform and more information
-    on how to install it can be attained at the Android Studio website https://developer.android.com/studio/index.html.
+    on how to install it can be attained at the Android Studio website <https://developer.android.com/studio/index.html>.
     Once you've finished installing Android Studio, open SDK manager install the Android 21 (5.0) SDK tools. When this
     is done, export the environment variable `$ANDROID_HOME` to point to the SDK manager directory.
 
  - Finally, you'll want to get the `Android NDK` to compile Wine for the Android platform. Information on how to install
-    this component is over at https://developer.android.com/ndk/index.html. When you've installed the NDK somewhere,
+    this component is over at <https://developer.android.com/ndk/index.html>. When you've installed the NDK somewhere,
     export the environment variable `$NDK_ROOT` to point to the top directory of the NDK (i.e. the one with `ndk-build`
     in it).
 
@@ -54,7 +54,7 @@ This guide assumes that all building will take place in `~/wine-android`, so go 
 ```bash
 mkdir ~/wine-android && cd ~/wine-android
 ```
-Next, grab a copy of Wine from http://winehq.org and extract it:
+Next, grab a copy of Wine from <http://winehq.org> and extract it:
 ```bash
 wget https://dl.winehq.org/wine/source/3.0/wine-3.0.tar.xz
 ```
@@ -77,7 +77,7 @@ but basically the commands to build are as follows:
 ```bash
 ./configure
 ```
-**For 64-bit host**
+**For 64-bit host:**
 ```bash
 ./configure --enable-win64 # No use in building useless i686 support
 ```
@@ -205,8 +205,8 @@ notification to open the keyboard when it's pressed.
 
 Finally, for those who compiled Wine for an ARM-based Android, in order to run WinRT applications, you
 will need to make sure you have the [`tpidrurw`](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a4780adeefd042482f624f5e0d577bf9cdcbb760) patch applied to your device's kernel. There's a tool that you
-can build to check this over at https://github.com/AndreRH/tpidrurw-test.
+can build to check this over at <https://github.com/AndreRH/tpidrurw-test>.
 
 ## For the Lazy
 There's already some automated builds for Wine on Android on the official download site.
-Check them out here if your device is supported: https://dl.winehq.org/wine-builds/android/.
+Check them out here if your device is supported: <https://dl.winehq.org/wine-builds/android>.
