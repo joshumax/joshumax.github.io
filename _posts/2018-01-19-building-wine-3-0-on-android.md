@@ -38,7 +38,7 @@ In order to build Wine for Android, you're going to need a few prerequisites:
 
  - Next, you're going to need the `Android SDK`. Installation instructions depend on your platform and more information
     on how to install it can be attained at the Android Studio website <https://developer.android.com/studio/index.html>.
-    Once you've finished installing Android Studio, open SDK manager install the Android 21 (5.0) SDK tools. When this
+    Once you've finished installing Android Studio, open SDK manager and install the Android 21 (5.0) SDK tools. When this
     is done, export the environment variable `$ANDROID_HOME` to point to the SDK manager directory.
 
  - Finally, you'll want to get the `Android NDK` to compile Wine for the Android platform. Information on how to install
