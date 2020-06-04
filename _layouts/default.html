@@ -4,17 +4,32 @@
   <body>
     <div class="page-content">
       <div class="container">
-        <div class="three columns">
-          {% include header.html %}
-        </div>
 
-        <div class="nine columns" style="z-index:100;">
-          <div class="wrapper">
-            {{ content }}
+        <!-- The start of our XP window -->
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">{{ site.title }}</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
           </div>
+
+        <!-- The body of our XP window -->
+        <div class="window-body">
+          {% include header.html %}
+
+          <!-- Content wrapped in tab panel -->
+          <article role="tabpanel">
+            <div class="wrapper">
+              {{ content }}
+            </div>
+          </article>
+
         </div>
       </div>
-      {% include footer.html %} 
+      {% include footer.html %}
     </div>
   </body>
 </html>

@@ -22,7 +22,7 @@ body {
   padding-bottom: 0rem;
   width:100%;
 
-  /* footer style */    
+  /* footer style */
   color: #99999a;
   background-color: #FAFAFB;
 
@@ -119,7 +119,7 @@ body {
       border-bottom:1px solid #ddd;
     }
   }
-  
+
   #menu-toggle:checked+.site-nav {
     opacity: 1;
     height: auto;
@@ -169,7 +169,6 @@ input#menu-toggle {
   text-align:right;
   @include media-query($on-laptop){
     text-align: center;
-    margin-bottom: 40px;
   }
   nav a {
     font-weight:400;
@@ -181,7 +180,7 @@ input#menu-toggle {
 }
 
 .post-list {
-  
+
 }
 
 .post_header {
@@ -228,9 +227,6 @@ p.readmore {
 }
 
 .article-footer {
-
-  padding:2rem 0;
-  border-top:1px solid #ddd;
   border-bottom:1px solid #ddd;
 
   .share {
@@ -262,8 +258,8 @@ p.readmore {
 
 /* author info */
 
-
 .author {
+  min-height: 105px;
   @media (max-width: $on-laptop) {
     display:inline-block;
     text-align:center;
@@ -329,16 +325,14 @@ body.custom-background {
 
 /* Archive page */
 
-.archive_list { 
+.archive_list {
   margin-left:5%;
   width:90%;
   margin-bottom:3rem;
 }
 
 .category-name {
-  padding-top:20px;
   text-transform:lowercase;
-  font-variant:small-caps;
   h2 {
    letter-spacing:0;
    border-bottom: 1px solid #ddd;
@@ -355,11 +349,10 @@ div.post_title span.date {
 
 .pagination {
   width:50%;
-}  
+}
 
-.pagination.older-post{
-  float: right;
-  text-align: right;
+.pagination.older-post {
+  font-size: 1.25em;
 }
 
 /* others */

@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family:  Helvetica, "Helvetica Neue", Arial, sans-serif;
 $base-font-size:   16px;
@@ -31,8 +29,6 @@ $content-width:    800px;
 $on-palm:          550px;
 $on-laptop:        780px;
 
-
-
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -47,7 +43,6 @@ $on-laptop:        780px;
 }
 
 .dont-break-out {
-
   /* Careful, this breaks the word wherever it is without a hyphen */
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -57,7 +52,6 @@ $on-laptop:        780px;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
-
 }
 
 @import

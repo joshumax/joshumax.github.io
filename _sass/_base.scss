@@ -7,7 +7,6 @@
 * 12/29/2014
 */
 
-
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
@@ -32,7 +31,7 @@
 }
 
 .box {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 /* Grid
@@ -44,9 +43,6 @@
   margin: 0 auto;
   padding: 10px 10px;
   box-sizing: border-box;
-  /* for test only */
-  border: 1px dashed #eeeeee;
-
 }
 .column,
 .columns {
@@ -135,6 +131,11 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
+  background: url(/assets/img/bliss.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -167,9 +168,6 @@ h6 { font-size: 1.1rem; line-height: 1.6;  letter-spacing: 0; }
   h6 { font-size: 1.1rem; }
 }
 
-p {
-  margin-top: 0; }
-
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -198,17 +196,11 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 38px;
   padding: 0 30px;
   color: #555;
   text-align: center;
   font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
   text-decoration: none;
-  white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid #bbb;
@@ -313,9 +305,9 @@ label > .label-body {
 
 
 /* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
 ul {
-  list-style: circle inside; 
+  list-style: circle inside;
 }
 ol {
   list-style: decimal inside; }
@@ -336,19 +328,15 @@ li {
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
-  border-radius: 4px; }
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre; }
 
+.highlight > pre {
+  margin: 1em 0px !important;
+  padding: 0;
+}
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -366,7 +354,7 @@ td:last-child {
 
 
 /* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
 button,
 .button {
   margin-bottom: 1rem; }
@@ -428,8 +416,8 @@ hr {
   display: table;
   clear: both; }
 
-  
-/* Images 
+
+/* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 img {
@@ -437,7 +425,7 @@ img {
     vertical-align: middle;
 }
 
-/* blockquote */ 
+/* blockquote */
 
 blockquote {
   margin: 1.5rem 0;
@@ -447,4 +435,4 @@ blockquote {
   line-height: 1.8rem;
   border-left: 3px solid #D0E5F2;
   font-size: 1.3rem;
-} 
+}

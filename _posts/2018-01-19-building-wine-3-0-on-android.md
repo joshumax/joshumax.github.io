@@ -57,8 +57,6 @@ mkdir ~/wine-android && cd ~/wine-android
 Next, grab a copy of Wine from <http://winehq.org> and extract it:
 ```bash
 wget https://dl.winehq.org/wine/source/3.0/wine-3.0.tar.xz
-```
-```bash
 tar xf wine-3.0.tar.xz
 ```
 Now you should have a directory called `wine-3.0` in `~/wine-android`, go ahead and copy it (we're going to need
